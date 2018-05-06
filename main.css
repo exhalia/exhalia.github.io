@@ -180,7 +180,13 @@ main {
  * Content
  *
  */
-
+.content {
+  display:flex; 
+  flex-wrap: wrap;
+}
+.hero, .top-news, .scores, .weather, .recent-news {
+  order: 10;
+}
 /*
  *
  * Hero
@@ -188,7 +194,7 @@ main {
  */
 
 .hero {
-
+  width: 100%;
   position: relative;
   background-image: url("./images/dog.jpg");
   background-size: 110%;
@@ -419,14 +425,8 @@ footer a {
  *
  */
 
-@media screen and (min-width: 400px){
-.content {
-  display: flex;
-  flex-wrap: wrap;
-}
-.hero, .top-news, .scores, .weather, .recent-news {
-  order: 10;
-}
+@media screen and (min-width: 450px){
+
 .header_menu{
   display: none;
 }
