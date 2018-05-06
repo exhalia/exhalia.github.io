@@ -425,8 +425,19 @@ footer a {
  *
  */
 
+<<<<<<< HEAD
 @media screen and (min-width: 450px){
 
+=======
+@media screen and (min-width: 400px){
+.content {
+  /*display: inline-flex;*/
+  flex-wrap: wrap;
+}
+.hero, .top-news, .scores, .weather, .recent-news {
+  order: 10;
+}
+>>>>>>> 43b92152c52d153bd7b566ca33ac94698964821f
 .header_menu{
   display: none;
 }
